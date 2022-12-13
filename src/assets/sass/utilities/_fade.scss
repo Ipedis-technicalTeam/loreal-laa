@@ -1,0 +1,12 @@
+@use 'sass:math';
+@use 'sass:color';
+
+/*______________________________________________________________________
+  ----------------------------- Fade (Func.) ---------------------------
+  ______________________________________________________________________ */
+
+@function fade($color, $percentage) {
+  $num: if(math.is-unitless($percentage), math.div($percentage, 100), math.div($percentage, 100%));
+
+  @return color.change($color, $alpha: $num);
+}

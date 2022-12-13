@@ -1,0 +1,25 @@
+@use '../utilities' as *;
+
+.nbsp {
+  white-space: nowrap;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  border: 0;
+  inline-size: 1px; // Width
+  block-size: 1px; // Height
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+
+  @include not-support('inline-size: 1px') {
+    width: 1px;
+  }
+
+  @include not-support('block-size: 1px') {
+    height: 1px;
+  }
+}

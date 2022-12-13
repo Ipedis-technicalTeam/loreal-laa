@@ -1,0 +1,33 @@
+@use 'sass:math';
+
+/*========== Convert Pixels to REM ==========*/
+
+@function rem($pixels) {
+  $rem: if(math.is-unitless($pixels), math.div($pixels, 16), math.div($pixels, 16px));
+
+  @return $rem * 1rem;
+}
+
+/*========== Convert Pixels to EM ==========*/
+
+@function em($pixels) {
+  $em: if(math.is-unitless($pixels), math.div($pixels, 16), math.div($pixels, 16px));
+
+  @return $em * 1em;
+}
+
+/*========== Convert Pixels to VW ==========*/
+
+@function vw($pixels, $screenSize: 1920) {
+  $vw: (math.div($pixels, $screenSize)) * 100;
+
+  @return $vw * 1vw;
+}
+
+/*========== Convert Pixels to VH ==========*/
+
+@function vh($pixels, $screenSize: 1080) {
+  $vh: (math.div($pixels, $screenSize)) * 100;
+
+  @return $vh * 1vh;
+}
