@@ -5,3 +5,176 @@ nav {
   background-color: $navBackgroundColor;
   color: $navTextColor;
 }
+
+
+.navContainer {
+  z-index: 1;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  @media (min-width: 425px) and (max-width: 768px) {width: 75%;}
+  @media (min-width: 768px) and (max-width: 2560px) {padding-right: 5px;}
+
+  .picture {
+    width: 100%;
+    height: 65%;
+    background-image: url("/src/assets/images/cover-desk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+
+    @media only screen and (max-width: 767px) and (orientation: landscape) {
+      height: 60%;
+    }
+  }
+
+  .logo {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.08) 100%);
+
+    img {
+      display: block;
+      width: 50%;
+
+      @media (min-width: 425px) and (max-width: 768px) {width: 30%;}
+      @media (min-width: 769px) and (max-width: 2400px) {width: 30%;}
+    }
+  }
+
+  .navElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+
+    @media only screen and (max-width: 767px) and (orientation: landscape) {
+      height: 40%;
+    }
+
+    nav {
+      ul {
+        li {
+          text-align: center;
+
+          @media only screen and (max-width: 896px) {
+            padding-bottom: 8px;
+          }
+
+          @media only screen and (min-width: 915px) {
+            padding-bottom: 12px;
+          }
+
+          a {
+            color: #000000;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            font-size: 1rem;
+            font-weight: 500;
+            &::after {
+              position: absolute;
+              content:'';
+              height: 2px;
+              width: 100%;
+              left: 0;
+              bottom: -5px;
+              background-image: url("/src/assets/images/bar-hr.jpg");
+            }
+            @media (min-width: 768px) and (max-width: 2560px) {
+              font-size: 18px;}
+          }
+        }
+      }
+    }
+
+    .doc {
+      @media only screen and (max-width: 896px) {
+        margin-bottom: 0px;
+      }
+
+      @media only screen and (min-width: 916px) {
+        margin-bottom: 5px;
+      }
+
+      @media (min-width: 768px) and (max-width: 2560px) {
+        font-size: 16px;}
+    }
+
+
+    .langContainer {
+
+      .langContainer__list {
+        display: flex;
+        align-items: center;
+        &__item {
+          color: #000000;
+          font-size: 0.85rem;
+          @media (min-width: 425px) and (max-width: 768px) {font-size: 1rem;}
+        }
+        .current {
+          position: relative;
+          color: #966f2e;
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            background-color: #c28d43;
+            width: 20px;
+            height: 2px;
+            @media (min-width: 425px) and (max-width: 768px) {width: 22px;}
+          }
+        }
+      }
+
+      .language__list__item:nth-child(1) {
+        padding-right: 5px;
+        margin-right: 5px;
+        border-right: 2px solid #000;
+      }
+
+      .language__list__item {
+        font-family: "LOREAL-Regular",sans-serif;
+        font-size: 14px;
+        a {
+          color: #000000;
+          text-decoration: none;
+          position: relative;
+
+          &:hover, &:focus {
+            &::before {
+              width: 20px;
+
+              @media (min-width: 425px) and (max-width: 768px) {
+                width: 22px;
+              }
+            }
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            background-color: #000000;
+            width: 0;
+            height: 2px;
+            -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+            -o-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+            transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+          }
+        }
+      }
+    }
+  }
+}

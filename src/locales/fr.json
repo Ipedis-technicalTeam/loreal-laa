@@ -14,7 +14,7 @@
   },
 
   "head": {
-    "title": "Webpack Boilerplate"
+    "title": "Lettre aux actionnaires - N° 83 - Hiver 2022/2023"
   },
 
   "navigation": {
@@ -29,6 +29,63 @@
 
   "main": {
     "heading": "French Main"
+  },
+
+  "banner" : {
+    "h1" : {
+      "sr" : "La lettre aux actionnaires",
+      "visible" : "<span class='font-light letter'>La lettre aux</span><br><span class='font-bold actionnaire'>actionnaires</span>"
+    },
+    "h2" : {
+      "sr" : "Numero 83, Hiver 2022/2023",
+      "visible" : "<span class='font-light'><span class='number'>N&deg;</span><span class='eightyOne'>83</span></span><br><span class='font-bold edition'>Hiver<br>2022/2023</span>"
+    },
+    "navList" : {
+      "item-1" : "Lire la lettre",
+      "item-2" : {
+        "text" : "Télécharger le PDF",
+        "url" : "./assets/files/L'OREAL-LETTRE-ACTIONNAIRES_81-FR-01.pdf",
+        "label" : "Télécharger le pdf - La lettre aux actionnaires No 81, 1,6 Mo - nouvel onglet"
+      },
+      "item-3" : {
+        "text" : "Archives",
+        "url" : "https://www.loreal-finance.com/fr/lettre-actionnaires-archives",
+        "label" : "Découvrir les archieves de L'Oréal, nouvel onglet"
+      },
+      "item-4" : "Document e-accessible",
+      "item-5" : {
+        "label" : "Choisir votre langue, Français ou anglais",
+        "fr" : {
+          "class" : "language__list__item current",
+          "content" : "<span aria-hidden='true'>FR</span><span class='sr-only'>Version Française</span>",
+          "current" : "page"
+        },
+        "en" : {
+          "class" : "language__list__item",
+          "content" : "<a href='https://www.loreal-finance.com/eng/letter-to-shareholders-82/' class='language__list__item__link' aria-label='English version' lang='EN'>EN</a>",
+          "current" : "false"
+        }
+      }
+    }
+  },
+
+  "heading": {
+    "item-1" : {
+      "sr" : "Performance & actualités",
+      "visible" : "<span class='font-light'>Performance</span><br><span class='font-bold'>& actualités</span>"
+    },
+    "item-2" : {
+      "sr" : "Investir day : À la rencontre des investisseurs",
+      "visible" : "<span class='font-bold'>Investir day :</span><br><span class='font-light'>À la rencontre des investisseurs</span>"
+    },
+    "item-3" : {
+      "sr" : "Nicolas Hieronimus Répond aux questions des actionnaires sur boursorama",
+      "visible" : "<span class='font-bold'>Nicolas Hieronimus</span><br><span class='font-light'>Répond aux questions des actionnaires sur boursorama</span>"
+    },
+    "item-4" : {
+      "sr" : "L’Oréal et vous, cours de bourse et contacts",
+      "visible" : "<span class='font-bold'>L’Oréal et vous</span><br><span class='font-light'>cours de bourse et contacts</span>"
+    }
   },
 
   "footer": {

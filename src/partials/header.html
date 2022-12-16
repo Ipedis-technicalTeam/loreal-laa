@@ -1,7 +1,47 @@
 <!-- HEADER START -->
-<header role="banner">
+<header role="banner" class="header">
   <div class="container">
-    <h2 id="lp-content" data-i18n="header.heading"></h2>
+    <div class="banner-left container__left">
+      <div class="banner-left__content">
+        <h1 class="sr-only" data-i18n="banner.h1.sr"></h1>
+        <h1 class="primaryHeading" aria-hidden="true" data-i18n="banner.h1.visible"></h1>
+        <h2 class="sr-only" data-i18n="banner.h2.sr"></h2>
+        <h2 class="secondaryHeading" aria-hidden="true" data-i18n="banner.h2.visible"></h2>
+      </div>
+      <img src="./assets/images/header-bar.jpg" alt="" class="banner-left__img">
+    </div>
+
+
+    <div class="navContainer">
+        <div class="logo">
+          <img src="./assets/images/loreal-finance.svg" alt="Logo : L'Oréal finance">
+        </div>
+        <div class="picture">
+          <img src="./assets/images/cover-mob-1.jpg" alt="" class="cover-mob">
+          <img src="./assets/images/cover-tb.jpg" alt="" class="cover-tablet">
+          <img src="./assets/images/cover.jpg" alt="" class="cover-desk">
+        </div>
+
+        <div class="navElements">
+          <nav role="navigation">
+            <ul class="no-style">
+              <li><a target-page="1" data-i18n="banner.navList.item-1"></a></li>
+              <li><a data-i18n="banner.navList.item-2.text banner.navList.item-2.url banner.navList.item-2.label" data-i18n-attr="innerHTML href aria-label" target="_blank"></a></li>
+              <li><a data-i18n="banner.navList.item-3.text banner.navList.item-3.url banner.navList.item-3.label" data-i18n-attr="innerHTML href aria-label" target="_blank"></a></li>
+            </ul>
+          </nav>
+          <p class="font-regular doc" data-i18n="banner.navList.item-4"></p>
+          <div class="langContainer">
+            <ul class="langContainer__list" data-i18n="banner.navList.item-5.label" data-i18n-attr="aria-label">
+              <li class="langContainer__list__item current" data-i18n="banner.navList.item-5.fr.class banner.navList.item-5.fr.content banner.navList.item-5.fr.current" data-i18n-attr="class innerHTML aria-current"></li>
+              <li class="langContainer__list__item " data-i18n="banner.navList.item-5.en.class banner.navList.item-5.en.content banner.navList.item-5.en.current" data-i18n-attr="class innerHTML aria-current"></li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+
   </div>
 </header>
+
 <!-- HEADER END -->
