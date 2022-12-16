@@ -1,22 +1,20 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+  font-family: "LOREAL-Regular";
+  src: url("../fonts/LOREALEssentielle-Regular.woff") format("woff"); /* Modern Browsers */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
+  font-family: "LOREAL-Light";
+  src: url("../fonts/LOREALEssentielle-Light.woff") format("woff"); /* Modern Browsers */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+  font-family: "LOREAL-Bold";
+  src: url("../fonts/LOREALEssentielle-Bold.woff") format("woff"); /* Modern Browsers */
 }
 
-$primaryFont: 'Roboto', sans-serif;
+$primaryFont: 'LOREAL-Regular', sans-serif;
+
+$fontBold: 'LOREAL-Bold', sans-serif;
+
+$fontLight: 'LOREAL-Light', sans-serif;

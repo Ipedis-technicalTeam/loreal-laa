@@ -34,18 +34,18 @@
   "banner" : {
     "h1" : {
       "sr" : "La lettre aux actionnaires",
-      "visible" : "<span class='font-light letter'>La lettre aux</span><br><span class='font-bold actionnaire'>actionnaires</span>"
+      "visible" : "<span class='font-light'>La lettre aux</span><br><span class='font-bold actionnaire'>actionnaires</span>"
     },
     "h2" : {
       "sr" : "Numero 83, Hiver 2022/2023",
-      "visible" : "<span class='font-light'><span class='number'>N&deg;</span><span class='eightyOne'>83</span></span><br><span class='font-bold edition'>Hiver<br>2022/2023</span>"
+      "visible" : "<span class='font-light'><span class='number'>N&deg;</span><span class='eightyOne'>83</span></span><br><span class='font-bold'>Hiver<br>2022/2023</span>"
     },
     "navList" : {
       "item-1" : "Lire la lettre",
       "item-2" : {
         "text" : "Télécharger le PDF",
-        "url" : "./assets/files/L'OREAL-LETTRE-ACTIONNAIRES_81-FR-01.pdf",
-        "label" : "Télécharger le pdf - La lettre aux actionnaires No 81, 1,6 Mo - nouvel onglet"
+        "url" : "./assets/files/LAA83_FR_01.pdf",
+        "label" : "Télécharger le pdf - La lettre aux actionnaires No 83, - nouvel onglet"
       },
       "item-3" : {
         "text" : "Archives",

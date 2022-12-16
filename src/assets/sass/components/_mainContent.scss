@@ -40,13 +40,13 @@ main {
         color: #ffffff;
         text-transform: uppercase;
         text-align: left;
-        line-height: 1.0;
+        line-height: 1.2;
         writing-mode: vertical-rl;
         transform: rotate(180deg) translate(50%,0);
         position: absolute;
         bottom: 30px;
         left: 50%;
-        letter-spacing: 4px;
+        letter-spacing: 3px;
         pointer-events: none;
         font-size: 1.15rem;
         max-height: 80%;
@@ -56,8 +56,12 @@ main {
           font-size: 15px;
         }
 
-        @media only screen and (min-width: 1600px) {
-          font-size: 20px;
+        @media only screen and (min-width: 1025px) {
+          font-size: 22px;
+          letter-spacing: 8px;
+        }
+        @media only screen and (min-width: 1440px) {
+          font-size: 28px;
         }
 
         .font-bold {
@@ -66,7 +70,7 @@ main {
         }
         .font-light {
           font-family: "LOREAL-Light",sans-serif;
-          font-weight: 300;
+          font-weight: 100;
         }
 
       }
@@ -136,7 +140,7 @@ main {
         transition: all 0.3s ease-in-out;
         padding: 10px 30px;
         font-size: 18px;
-
+      font-family: $fontBold;
         @media (min-width: 769px) and (max-width: 2560px) {padding: 12px 40px; font-size: 21px;}
 
 
@@ -152,7 +156,7 @@ main {
     }
 
     .content-link-3 .tabContent__link__text {
-      background-color: #2A817C;
+      background-color: #490825;
     }
 
     .content-link-4 .tabContent__link__text {
@@ -188,6 +192,7 @@ main {
   background-position: center center;
 
   @media (min-width: 425px) and (max-width: 769px) {background-position: center -30px;}
+  @media (min-width: 770px) and (max-width: 2400px) {background-position: inherit;}
 
 }
 #panel-2 {
@@ -198,10 +203,10 @@ main {
 #panel-3 {
   background-image: url("/src/assets/images/tab-3.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
 }
 #panel-4 {
-  background-image: url("/src/assets/images/tab-4-hz.png");
+  background-image: url("/src/assets/images/tab-4-h.png");
   background-repeat: no-repeat;
   background-position: center center;
 

@@ -34,15 +34,29 @@
           order: 2;
           color: #000;
           line-height: 1.0;
-
-
           writing-mode: tb-rl;
           transform: rotate(180deg);
           padding-left: 2px;
           font-size: 31px;
           font-weight: 300;
+          @media #{$ps-desktop} {
+            letter-spacing: 6px;
+          }
+
           .font-bold.actionnaire {
-            font-weight: 600;
+            font-family: $fontBold;
+            @media only screen and (max-width: 768px) {font-size: 32px;}
+            @media (min-width: 769px) and (max-width: 900px) {font-size: 33px;}
+            @media (min-width: 901px) and (max-width: 2560px) {font-size: 45px;}
+          }
+
+          .font-light {
+            letter-spacing: 2px;
+            font-family: $fontLight;
+            @media only screen and (max-width: 768px) {font-size: 28px;}
+            @media (min-width: 769px) and (max-width: 900px) {font-size: 33px;}
+            @media (min-width: 901px) and (max-width: 2560px) {font-size: 45px;}
+
           }
         }
 
@@ -52,7 +66,15 @@
           padding-right: 5px;
           transition: all 0.3s ease-in-out;
           font-size: 1.1rem;
+
+          .font-bold {
+            font-family: $fontBold;
+          }
+
           @media only screen and (max-width: 425px) {font-size: 14px;}
+          .font-light {
+            font-family: $fontLight;
+          }
         }
       }
 
