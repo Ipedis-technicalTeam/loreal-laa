@@ -1,6 +1,13 @@
 @use '../utilities' as *;
 @use '../theme' as *;
 
+#root {
+  @media #{$ps-desktop} {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .container {
   // Try to keep 960px max-width until screen is smaller than 960px then switch to 100% max-width and Add padding right and left to container on mobile
   inline-size: min(calc(100% - $containerPaddingMobile), rem(960px));

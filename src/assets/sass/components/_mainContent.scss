@@ -1,0 +1,277 @@
+@use '../utilities' as *;
+@use '../theme' as *;
+
+main {
+  @media #{$ps-desktop} {
+    width: 60%;
+    height: 100vh;
+  }
+}
+
+.mainContent {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  display: flex;
+
+  @media (min-width: 425px) and (max-width: 1024px) {height: 100vh;}
+  @media (min-width: 1025px) and (max-width: 2560px) {align-items: center; width: 100%;
+    height: 100%;}
+
+  .tablist {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .tabBtn {
+      transition: all 0.3s ease-in-out;
+      width: 25%;
+      height: 100%;
+      position: relative;
+
+      &:focus {
+        outline: 2px solid #b00057;
+        outline-offset: 0;
+        border-top: 2px solid #b00057;
+        border-bottom: 2px solid #b00057;
+      }
+
+      .btnHeading {
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: left;
+        line-height: 1.0;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg) translate(50%,0);
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        letter-spacing: 4px;
+        pointer-events: none;
+        font-size: 1.15rem;
+        max-height: 80%;
+
+        @media (min-width: 425px) and (max-width: 767px) {font-size: 23px;}
+        @media only screen and (max-width: 767px) and (orientation: landscape) {
+          font-size: 15px;
+        }
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 20px;
+        }
+
+        .font-bold {
+          font-family: "LOREAL-Bold",sans-serif;
+          font-weight: 600;
+        }
+        .font-light {
+          font-family: "LOREAL-Light",sans-serif;
+          font-weight: 300;
+        }
+
+      }
+
+      .open, .close {
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%,0);
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+        @media (min-width: 769px) and (max-width: 2560px) {width: 45px;}
+
+      }
+
+      .opened {
+        display: none;
+      }
+
+      .close {
+        display: none;
+      }
+
+      .closed {
+        display: block;
+      }
+
+    }
+  }
+
+  .tabContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    position: absolute;
+    left: 25%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    @media (min-width: 425px) and (max-width: 769px) {-webkit-background-size: unset;background-size: unset;}
+    
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      padding-bottom: 100px;
+
+      &:focus {
+        outline: 2px solid #FF0000;
+      }
+
+
+      @media (min-width: 769px) and (max-width: 2560px) {align-items: center; padding-bottom: 0;}
+
+      &__text {
+        color: #ffffff;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        padding: 10px 30px;
+        font-size: 18px;
+
+        @media (min-width: 769px) and (max-width: 2560px) {padding: 12px 40px; font-size: 21px;}
+
+
+      }
+    }
+
+    .content-link-1 .tabContent__link__text {
+      background-color: #2C506D;
+    }
+
+    .content-link-2 .tabContent__link__text {
+      background-color: #4D4084;
+    }
+
+    .content-link-3 .tabContent__link__text {
+      background-color: #2A817C;
+    }
+
+    .content-link-4 .tabContent__link__text {
+      background-color: #565655;
+    }
+
+  }
+}
+
+#tab-1 {
+  background-color: #2c506d;
+  @media (min-width: 769px) and (max-width: 2560px) {margin-right: 5px;}
+
+}
+#tab-2 {
+  background-color: #383286;
+  @media (min-width: 769px) and (max-width: 2560px) {margin-right: 5px;}
+
+}
+#tab-3 {
+  background-color: #53042a;
+  @media (min-width: 769px) and (max-width: 2560px) {margin-right: 5px;}
+
+}
+#tab-4 {
+  background-color: #565655;
+  //@media (min-width: 769px) and (max-width: 2560px) {margin-right: 5px;}
+}
+
+#panel-1 {
+  background-image: url("/src/assets/images/tab-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: 425px) and (max-width: 769px) {background-position: center -30px;}
+
+}
+#panel-2 {
+  background-image: url("/src/assets/images/tab-2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#panel-3 {
+  background-image: url("/src/assets/images/tab-3.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#panel-4 {
+  background-image: url("/src/assets/images/tab-4-hz.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: 769px) and (max-width: 2560px) {background-size: 720px;}
+}
+
+.appear {
+  width: 75% !important;
+
+  .content-link-1 {
+    background-color: rgba(44,80,109,0.3);
+    @media (min-width: 769px) and (max-width: 2560px) {
+      background-color: rgba(44,80,109,0);
+      &:hover, &:focus {
+        background-color: rgba(44,80,109,0.3);
+      }
+    }
+  }
+
+  .content-link-2 {
+    background-color: rgba(77,64,132,0.3);
+    @media (min-width: 769px) and (max-width: 2560px) {
+      background-color: rgba(77,64,132,0);
+      &:hover, &:focus {
+        background-color: rgba(77,64,132,0.3);
+      }
+    }
+
+  }
+
+  .content-link-3 {
+    background-color: rgba(42, 129, 124,0.3);
+    @media (min-width: 769px) and (max-width: 2560px) {
+      background-color: rgba(42, 129, 124,0);
+      &:hover, &:focus {
+        background-color: rgba(42, 129, 124,0.3);
+      }
+    }
+  }
+
+  .content-link-4 {
+    background-color: rgba(86,86,85,0.3);
+    @media (min-width: 769px) and (max-width: 2560px) {
+      background-color: rgba(86,86,85,0);
+      &:hover, &:focus {
+        background-color: rgba(86,86,85,0.3);
+      }
+    }
+
+  }
+
+  .tabContent__link {
+    .tabContent__link__text {
+      visibility: visible !important;
+
+      @media (min-width: 769px) and (max-width: 2560px) {
+        visibility: hidden !important;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 2560px) {
+      &:hover, &:focus {
+        .tabContent__link__text {
+          visibility: visible !important;
+        }
+      }
+    }
+  }
+}
+
+.inactive {
+  display: none;
+}
