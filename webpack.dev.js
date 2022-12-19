@@ -62,7 +62,7 @@ module.exports = merge(common, {
       title: `${FR.head.title} | Development`,
 
       // ********* TO CHANGE 'fr' OR 'en' LANG FOR DEV MODE ********* //
-      lang: 'fr',
+      lang: 'en',
     }),
 
     ...multipleHtmlPlugins,

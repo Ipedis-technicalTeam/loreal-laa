@@ -13,7 +13,7 @@
   },
 
   "head": {
-    "title": "Webpack Boilerplate"
+    "title": "The letter to shareholders - N° 83 Winter 2022/2023"
   },
 
   "navigation": {
@@ -28,6 +28,67 @@
 
   "main": {
     "heading": "English Main"
+  },
+
+  "banner" : {
+    "h1" : {
+      "sr" : "The letter to shareholders",
+      "visible" : "<span class='font-light'>The letter to</span><br><span class='font-bold actionnaire'>shareholders</span>"
+    },
+    "h2" : {
+      "sr" : "Numero 83, Winter 2022/2023",
+      "visible" : "<span class='font-light'><span class='number'>N&deg;</span><span class='eightyOne'>83</span></span><br><span class='font-bold'>Winter<br>2022/2023</span>"
+    },
+    "navList" : {
+      "item-1" : "Read the letter",
+      "item-2" : {
+        "text" : "Download the PDF",
+        "url" : "./assets/files/LAA83_EN_01.pdf",
+        "label" : "Download the PDF - The letter to shareholders No 83, - nouvel onglet"
+      },
+      "item-3" : {
+        "text" : "Archives",
+        "url" : "https://www.loreal-finance.com/fr/lettre-actionnaires-archives",
+        "label" : "Discover the archives of L'Oréal, nouvel onglet"
+      },
+      "item-4" : "E-accessible Document",
+      "item-5" : {
+        "label" : "Choose your language, French or english",
+        "fr" : {
+          "class" : "language__list__item",
+          "content" : "<a href='https://validation.publispeak.com/loreal/1777/' class='language__list__item__link' aria-label='French version' lang='FR'>FR</a>",
+          "current" : "false"
+        },
+        "en" : {
+          "class" : "language__list__item current",
+          "content" : "<span aria-hidden='true'>EN</span><span class='sr-only'>English Version</span>",
+          "current" : "page"
+        }
+      }
+    }
+  },
+
+  "heading": {
+    "item-1" : {
+      "sr" : "Performance & news",
+      "visible" : "<span class='font-light'>Performance</span><br><span class='font-bold'>& news</span>"
+    },
+    "item-2" : {
+      "sr" : "Investing day : Meeting investors",
+      "visible" : "<span class='font-bold'>Investing day :</span><br><span class='font-light'>Meeting investors</span>"
+    },
+    "item-3" : {
+      "sr" : "Nicolas Hieronimus Answers questions from shareholders on boursorama",
+      "visible" : "<span class='font-bold'>Nicolas Hieronimus</span><br><span class='font-light'>Answers questions from shareholders on boursorama</span>"
+    },
+    "item-4" : {
+      "sr" : "L’Oréal and you, share price and contacts",
+      "visible" : "<span class='font-bold'>L’Oréal and you</span><br><span class='font-light'>share price and contacts</span>"
+    }
+  },
+
+  "tabpanel": {
+    "p": "Consult"
   },
 
   "footer": {

@@ -62,7 +62,7 @@
         },
         "en" : {
           "class" : "language__list__item",
-          "content" : "<a href='https://www.loreal-finance.com/eng/letter-to-shareholders-82/' class='language__list__item__link' aria-label='English version' lang='EN'>EN</a>",
+          "content" : "<a href='https://validation.publispeak.com/loreal/1778/' class='language__list__item__link' aria-label='English version' lang='EN'>EN</a>",
           "current" : "false"
         }
       }
@@ -86,6 +86,10 @@
       "sr" : "L’Oréal et vous, cours de bourse et contacts",
       "visible" : "<span class='font-bold'>L’Oréal et vous</span><br><span class='font-light'>cours de bourse et contacts</span>"
     }
+  },
+
+  "tabpanel": {
+    "p": "Consultez"
   },
 
   "footer": {
